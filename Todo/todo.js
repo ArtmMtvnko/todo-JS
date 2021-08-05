@@ -1,4 +1,4 @@
-document.getElementById('check').onclick () => {
+document.getElementById('check').onclick = () => {
     const login = document.getElementById('login').value
     const password = document.getElementById('password').value
 
@@ -12,7 +12,7 @@ document.getElementById('check').onclick () => {
     }
 }
 
-document.getElementById('register').onclick () => {
+document.getElementById('register').onclick = () => {
     const registration = document.getElementById('login').value
     const registretionPassword = document.getElementById('password').value
 

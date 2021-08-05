@@ -1,24 +1,22 @@
-document.getElementById('check').onclick = function () {
-    const log = document.getElementById('login').value
-    const pass = document.getElementById('password').value
+document.getElementById('check').onclick () => {
+    const login = document.getElementById('login').value
+    const password = document.getElementById('password').value
 
-    const regData = localStorage.getItem(log)
-    console.log(regData)
+    const userData = localStorage.getItem(login)
+    console.log(userData)
 
-    if (pass === regData) {
+    if (password === userData) {
         alert('Wellcome')
-        // localStorage.setItem('loginTwo', log)
-        // console.log(typeof(log))
     } else {
         alert(':(')
     }
 }
 
-document.getElementById('register').onclick = function() {
-    const reg = document.getElementById('login').value
-    const regPass = document.getElementById('password').value
+document.getElementById('register').onclick () => {
+    const registration = document.getElementById('login').value
+    const registretionPassword = document.getElementById('password').value
 
-    localStorage.setItem(reg, regPass)
+    localStorage.setItem(registration, registretionPassword)
 }
 
 
